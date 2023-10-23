@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W05: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html"  class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="project">
+    <h1>Public Holidays Around the World</h1>
+    <p id ="description">A guide for travelers exploring public holidays in various countries around the world.</p>
+    <div class="container">
+        <div class="centered">
+            <label for="country">Select a Country:</label>
+            <select id="country">
+            </select>
+            <label for="yr">Select a Year:</label>
+            <input type="number" id="yr">
+            <button id="getHolidaysButton">Get Holidays</button>
+        </div>
+    </div>
+    <select id="monthFilter" title="Choose a data filter.">
+      <option value="">Filter Month</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+  </select>
+    <div id="holidays"></div>
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | Public Holiday Viewer | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/initialize.js"></script>
+  <script type="module" src="scripts/project.js"></script>
+</body>
+
+</html>
